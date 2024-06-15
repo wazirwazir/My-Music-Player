@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(60deg, rgb(161, 159, 159), rgb(245, 234, 234));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body:hover {
+    
+    background: linear-gradient(60deg, rgb(37, 35, 35), rgb(161, 159, 159), rgb(245, 234, 234), rgb(54, 50, 50));    
+    transition-duration: 3s;
+}
+
+div {
+    box-sizing: border-box;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+main {
+    background-color: rgba(206, 206, 206, 0.185);
+    width: 50%;
+    max-width: 959px;
+    min-height: 95vh;
+    max-width: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 10px rgba(161, 161, 161, 0.192);
+}
+.img-container {
+    background-color: purple;
+    width: 80%;
+    height: 20em;
+}
+.navigator {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.hide {
+    display: none;
+}
+marquee {
+    font-size: 1.5em;
+    width: 70%;
+    margin: unset auto unset auto;
+}
+.navigator button {
+    
+    border: none;
+    border-radius: 50%;
+    width: 5em;
+    cursor: pointer;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px 1px rgb(161, 161, 161);
+    
+}
+.navigator button:hover {
+    background-color: aqua;
+    transition-duration: 2s;
+}
+svg {
+    width: 50%;
+}
