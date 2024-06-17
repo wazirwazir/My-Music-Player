@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(54, 50, 50);
+    background: linear-gradient(to right, #749D34, #592A71) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ div {
     gap: 1em;
 }
 main {
-    background-color: rgba(206, 206, 206, 0.11);
+    background: linear-gradient(to left, #749D34, #592A71) ;
     width: 50%;
     max-width: 959px;
     min-height: 95vh;
@@ -56,7 +56,7 @@ marquee {
     margin: unset auto unset auto;
 }
 .navigator button {
-    
+    background-color: #592A71;
     border: none;
     border-radius: 50%;
     width: 5em;
@@ -65,13 +65,16 @@ marquee {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 3px 2px rgb(161, 161, 161);
+    box-shadow: 0 0 3px 1px rgb(161, 161, 161);
     
 }
 .navigator button:hover {
-    background-color: aqua;
-    transition-duration: 2s;
+    background-color: #9fcf51;
+    transition-duration: 1s;
 }
 svg {
     width: 50%;
+}
+svg path {
+    fill: #260339;
 }

@@ -36,16 +36,6 @@ let track = [
         file: 'scr/music/_Wizkid_-_Ojuelegba.mp3'
     },
     {
-        image: 'scr/img/20230709_090016.jpg',
-        title: 'Jon_Bellion_He Is The Same.mp3',
-        file: 'scr/music/01 He Is The Same.mp3'
-    },
-    {
-        image: 'scr/img/20230713_192243.jpg',
-        title: 'Party-feat.-Gucci-Mane-Usher.mp3',
-        file: 'scr/music/01-Party-feat.-Gucci-Mane-Usher.mp3'
-    },
-    {
         image: 'scr/img/20230624_173024.jpg',
         title: 'Khalid_Young Dumb & Broke - (Musicfire.in).mp3',
         file: 'scr/music/02 - Young Dumb & Broke - (Musicfire.in).mp3'
@@ -55,10 +45,9 @@ let currentIndex = 0
 function next()  {
     const currentSong = track[currentIndex]
     musicImg.src = currentSong.image;
-    songTitle.textContent = currentSong.title
+    songTitle.textContent = currentSong.title;
     audio.src = currentSong.file; 
     currentIndex = (currentIndex + 1) % track.length;
-    console.log(audio)
     audio.play()
 }
 function prev()  {
@@ -67,7 +56,6 @@ function prev()  {
     songTitle.textContent = currentSong.title
     audio.src = currentSong.file; 
     currentIndex = (currentIndex - 1 + track.length) % track.length;
-    console.log(audio)
     audio.play()
 }
 
