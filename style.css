@@ -35,6 +35,11 @@ main {
     width: 80%;
     height: 20em;
 }
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .navigator {
     display: flex;
     justify-content: center;
