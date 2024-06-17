@@ -26,10 +26,6 @@ playbtn.addEventListener('click', () => {
   
 })
 
-nextbtn.addEventListener('click', () => {
-    
-})
-
 let track = [
     {
         title: 'Freaky Friday (feat. Chris Brown)',
@@ -61,7 +57,4 @@ function next()  {
     console.log(audio)
     audio.play()
 }
-nextbtn.addEventListener('click', () => {
-    next()
-    
-})
+nextbtn.addEventListener('click', next)
