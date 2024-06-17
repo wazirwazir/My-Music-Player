@@ -29,16 +29,18 @@ main {
     gap: 2em;
     border-radius: 20px;
     box-shadow: 0 0 10px 7px rgba(161, 161, 161, 0.055);
+    
 }
 .img-container {
-    background-color: purple;
-    width: 80%;
-    height: 20em;
+    background-color: transparent;
+    width: 90%;
+    height: 21em;
 }
 .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 .navigator {
     display: flex;
