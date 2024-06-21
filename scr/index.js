@@ -7,7 +7,7 @@ let pauseign = document.querySelector('.pausesign')
 let currenAud = document.querySelector('.currentAud')
 let songTitle = document.getElementById('marquee')
 let musicImg = document.querySelector('img')
-
+let progressBar = document.querySelector('.progress-bar')
 
 playbtn.addEventListener('click', () => {
    if(audio.paused) {
@@ -69,6 +69,12 @@ function updateBar() {
     dur.style.width = progressPercent + '%'
 }
 
+progressBar.addEventListener('click', (e) => {
+    const click = (e.offsetX / progressBar.offsetWidth) *
+    audio.duration;
+    audio.currentTime = click;
+    audio.play()
+})
 
 
 audio.addEventListener('timeupdate', updateBar)

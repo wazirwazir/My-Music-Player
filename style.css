@@ -101,8 +101,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 3px 1px rgb(161, 161, 161);
-    
+    box-shadow: 0 0 3px 1px rgb(161, 161, 161);   
 }
 .navigator button:hover {
     background-color: #9fcf51;
