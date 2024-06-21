@@ -14,19 +14,21 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
+    width: 90%;
 }
 main {
     background: linear-gradient(to left, #749D34, #592A71) ;
     width: 50%;
     max-width: 959px;
-    min-height: 95vh;
+    min-height: 100%;
+    padding-bottom: 1em;
     min-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
     border-radius: 20px;
     box-shadow: 0 0 10px 7px rgba(161, 161, 161, 0.055);
     
@@ -34,7 +36,11 @@ main {
 .img-container {
     background-color: transparent;
     width: 90%;
-    height: 21em;
+    height: 20em;
+    transition-duration: 1s;
+}
+.img-container:hover {
+    width: 100%;
 }
 .img-container img {
     width: 100%;
@@ -50,9 +56,38 @@ main {
 .hide {
     display: none;
 }
-marquee {
-    font-size: 1.5em;
+.progress {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 0.2em;
+}
+.progress-bar {
+    background-color: #592A71;
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.duration {
+    display: flex;
+    justify-content: space-between;
+}
+.dur {
+    width: 0;
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 3px 1px #9fcf51;
+    background: #749D34;
+}
+.marquee {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
     width: 70%;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
     margin: unset auto unset auto;
 }
 .navigator button {
@@ -60,6 +95,7 @@ marquee {
     border: none;
     border-radius: 50%;
     width: 5em;
+    max-width: 220px;
     cursor: pointer;
     height: 5em;
     display: flex;
