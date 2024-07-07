@@ -83,14 +83,6 @@ progressBar.addEventListener('click', (e) => {
     audio.play()
 })
 
-function songDuration() {
-    let secs = Math.floor(audio.duration % 60)
-    let min = Math.floor(audio.duration / 60)
-    let formattedSecs = secs.toString().padStart(2, '0')
-    let formattedMin = min.toString().padStart(2, '0')
-
-    totalDuration.innerText = formattedMin + ':' + formattedSecs
-}
 function timeLeft() {
     let secs = Math.floor(audio.currentTime % 60)
     let min = Math.floor(audio.currentTime / 60)
@@ -99,7 +91,7 @@ function timeLeft() {
     elapsedDuration.innerText = formattedMin + ':' + formattedSecs
 }
 
-setTimeout(songDuration, 10);
+
 audio.onplaying = setInterval(timeLeft, 500)
 audio.addEventListener('timeupdate', updateBar)
 audio.addEventListener('ended', next)
